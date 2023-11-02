@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
+//테스트 코드에서 RunWith과 ContextConfiguration은 함께 사용한다.
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {org.zerock.config.RootConfig.class})
 @Log4j
