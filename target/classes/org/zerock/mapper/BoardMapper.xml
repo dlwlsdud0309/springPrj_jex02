@@ -17,6 +17,7 @@
 	</insert>
 	
 	<insert id="insertSelectKey">
+		<!-- SelectKey는 주로 PK의 값을 미리(before) SQL을 통해서 처리해 두고 특정한 이름으로 결과를 보관하는 방식 -->
 		<selectKey keyProperty="bno" order="BEFORE" resultType="long">
 			select seq_board.nextval from dual
 		</selectKey>
